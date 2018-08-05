@@ -16,7 +16,7 @@ class Index extends Component {
         const pageRes = await fetch(
             `${Config.apiUrl}/wp-json/postlight/v1/page?slug=welcome`
         );
-        const page = await pageRes.json();
+        const page = await pageRes.json();  // this is welcomePage content part
         const postsRes = await fetch(
             `${Config.apiUrl}/wp-json/wp/v2/posts?_embed`
         );
@@ -60,11 +60,7 @@ class Index extends Component {
         return (
             <Layout>
                 <Menu menu={this.props.headerMenu} />
-                <img
-                    src="/static/images/wordpress-plus-react-header.png"
-                    width="815"
-                    style={headerImageStyle}
-                />
+
                 <h1>{this.props.page.title.rendered}</h1>
                 <div
                     dangerouslySetInnerHTML={{

@@ -1,6 +1,9 @@
 import React from "react";
 import { Config } from "../config.js";
 
+// higher order wrapper that provide the header menu information as props.headerMenu which is used by page rendering
+// <Menu menu={this.props.headerMenu} />
+
 const PageWrapper = Comp => (
   class extends React.Component {
     static async getInitialProps(args) {

@@ -5,6 +5,7 @@ import Menu from "./Menu.js";
 import { Config } from "../config.js";
 import stylesheet from '../src/styles/style.scss'
 
+// this is html <HEAD> element
 class Header extends Component {
     constructor() {
         super();
@@ -22,7 +23,7 @@ class Header extends Component {
                     />
                     <meta charSet="utf-8" />
                     <title>
-                        WordPress + React Starter Kit Frontend by Postlight
+                        next.js
                     </title>
                 </Head>
             </div>
