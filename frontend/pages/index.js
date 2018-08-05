@@ -67,6 +67,8 @@ class Index extends Component {
                         __html: this.props.page.content.rendered
                     }}
                 />
+                <Link as="/category/news" href="/category/news" >categories: news</Link>
+
                 <h2>Posts</h2>
                 {posts}
                 <h2>Pages</h2>
